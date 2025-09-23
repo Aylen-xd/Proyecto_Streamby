@@ -7,4 +7,4 @@
 *⚜️Colaboradores:*
 - [Keila Mateo]([enlace-a-su-perfil-de-GitHub](https://github.com/keilaNerea06))
 - [Geraldine Vargas]([enlace-a-su-perfil-de-GitHub](https://github.com/Gerald-Vargas))
-- [Aylen Toledo]([enlace-a-su-perfil-de-GitHub](https://github.com/Aylen-xd))
+- [Aylén Toledo]([enlace-a-su-perfil-de-GitHub](https://github.com/Aylen-xd))
