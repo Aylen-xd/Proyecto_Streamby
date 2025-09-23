@@ -5,6 +5,6 @@
 ![somos](https://i.pinimg.com/736x/8a/1a/ff/8a1aff77d04a73db8d35f37daacdae38.jpg)
 
 ### ⚜️Colaboradores:
-* [Keila Mateo]([enlace-a-su-perfil-de-GitHub](https://github.com/keilaNerea06))
-* [Geraldine Vargas]([enlace-a-su-perfil-de-GitHub](https://github.com/Gerald-Vargas))
-* [Aylén Toledo]([enlace-a-su-perfil-de-GitHub](https://github.com/Aylen-xd))
+* [Keila Mateo]((https://github.com/keilaNerea06))
+* [Geraldine Vargas]((https://github.com/Gerald-Vargas))
+* [Aylén Toledo]((https://github.com/Aylen-xd))
