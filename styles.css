@@ -1,0 +1,128 @@
+
+body.scene-style {
+    background-image: url("image_fondo.jpg");
+    background-repeat: repeat;
+    background-attachment: fixed;
+    color: #fff;
+    font-family: "Press Start 2P", monospace;
+    margin: 0;
+    text-shadow: 2px 2px 4px #000;
+}
+
+/* Navbar */
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px;
+    background: rgba(0, 0, 0, 0.6);
+    border-bottom: 2px solid #ff66cc;
+}
+
+.logo {
+    font-size: 0.9rem;
+    color: #ff66cc;
+}
+
+/* Botones navbar */
+.nav-links .btn {
+    font-size: 0.6rem;
+    padding: 6px 10px;
+    margin-left: 5px;
+    color: #fff;
+    background-color: #9900ff;
+    text-decoration: none;
+    border: 2px solid #ff66cc;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.nav-links .btn:hover {
+    background-color: #ff66cc;
+    color: #000;
+}
+
+/* Encabezado */
+header {
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 1.3rem;
+    color: #ffb3ff;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 0.8rem;
+    color: #ffd6ff;
+    margin-bottom: 20px;
+}
+
+/* Formulario de búsqueda */
+#search-form input {
+    font-family: "Press Start 2P", monospace;
+    font-size: 0.7rem;
+    padding: 6px;
+    border: 2px solid #ff66cc;
+    border-radius: 4px;
+    margin-right: 5px;
+    width: 200px;
+}
+
+#search-form button {
+    font-family: "Press Start 2P", monospace;
+    font-size: 0.7rem;
+    padding: 6px 10px;
+    background-color: #9900ff;
+    color: #fff;
+    border: 2px solid #ff66cc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+#search-form button:hover {
+    background-color: #ff66cc;
+    color: #000;
+}
+
+/* Galería de imágenes */
+#gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 10px;
+}
+
+#gallery img {
+    width: 150px;
+    height: auto;
+    margin: 5px;
+    border: 2px solid #ff66cc;
+    border-radius: 4px;
+    box-shadow: 0 0 5px #ff66cc;
+    transition: transform 0.2s;
+}
+
+#gallery img:hover {
+    transform: scale(1.1);
+}
+
+/* Resultados y párrafos */
+p {
+    font-size: 0.65rem;
+    text-align: center;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.6);
+    border-top: 2px solid #ff66cc;
+    font-size: 0.6rem;
+}
+
+
