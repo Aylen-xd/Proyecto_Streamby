@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ModaAyuda!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="scene-style">
+
+<!--  Barra superior -->
+<nav class="top-bar">
+    <div class="logo">ModaAyuda!</div>
+    <div class="nav-links">
+        <a href="#" class="btn">Iniciar sesión</a>
+        <a href="#" class="btn">Registrarse</a>
+    </div>
+</nav>
+
+<!--  Encabezado -->
+<header>
+    <h1>Encuentra tu estilo ideal</h1>
+    <p class="subtitle">Busca inspiración según tu vibra</p>
+
+    <form id="search-form">
+        <input type="text" id="search-input" placeholder="Ej: punk">
+        <button type="submit">🔍 Buscar</button>
+    </form>
+</header>
+
+<main>
+    <section id="results">
+        <p>Escribí un estilo para descubrir ideas de ropa y cuáles van con vos</p>
+        <div id="gallery"></div>
+    </section>
+</main>
+
+<footer>
+    <p>Hecho por Aylen Toledo, Keila Mateo y Geraldine Vargas</p>
+</footer>
+
+<script>
+const outfits = {
+    "punk": [
+        "https://i.pinimg.com/564x/18/04/90/18049065da3b05bfae3e2d8a8ef6f4c7.jpg",
+        "https://i.pinimg.com/564x/df/a4/16/dfa4160c7a69b8b77f11b7280e9dfc82.jpg"
+    ],
+    "kawaii": [
+        "https://i.pinimg.com/564x/0e/6a/31/0e6a3168e23a9cfd6c4f08b8c1e92b92.jpg",
+        "https://i.pinimg.com/564x/b9/52/42/b952428d49a07f79bfffe2deac4d4d9d.jpg"
+    ],
+    "grunge": [
+        "https://i.pinimg.com/564x/b2/77/b7/b277b71a070b9a11df238884c612dbdb.jpg",
+        "https://i.pinimg.com/564x/9c/88/11/9c88114f4d8902de4a421c8ab45e7c07.jpg"
+    ],
+    "vintage": [
+        "https://i.pinimg.com/564x/2f/2d/0c/2f2d0cc15e3173a96c6f8f76bcd51687.jpg",
+        "https://i.pinimg.com/564x/41/36/8a/41368a68c5aeb7ff3b4e1f377f2270e1.jpg"
+    ]
+};
+
+document.getElementById("search-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    const search = document.getElementById("search-input").value.toLowerCase();
+    const gallery = document.getElementById("gallery");
+    gallery.innerHTML = "";
+    if (outfits[search]) {
+        outfits[search].forEach(url => {
+            const img = document.createElement("img");
+            img.src = url;
+            gallery.appendChild(img);
+        });
+    } else {
+        gallery.innerHTML = "<p>No se encontraron resultados para ese estilo 😢</p>";
+    }
+});
+</script>
+
+</body>
+</html>
