@@ -41,24 +41,21 @@
 </footer>
 
 <script>
-const outfits = {
-    "punk": [
-        "https://i.pinimg.com/564x/18/04/90/18049065da3b05bfae3e2d8a8ef6f4c7.jpg",
-        "https://i.pinimg.com/564x/df/a4/16/dfa4160c7a69b8b77f11b7280e9dfc82.jpg"
-    ],
-    "kawaii": [
-        "https://i.pinimg.com/564x/0e/6a/31/0e6a3168e23a9cfd6c4f08b8c1e92b92.jpg",
-        "https://i.pinimg.com/564x/b9/52/42/b952428d49a07f79bfffe2deac4d4d9d.jpg"
-    ],
-    "grunge": [
-        "https://i.pinimg.com/564x/b2/77/b7/b277b71a070b9a11df238884c612dbdb.jpg",
-        "https://i.pinimg.com/564x/9c/88/11/9c88114f4d8902de4a421c8ab45e7c07.jpg"
-    ],
-    "vintage": [
-        "https://i.pinimg.com/564x/2f/2d/0c/2f2d0cc15e3173a96c6f8f76bcd51687.jpg",
-        "https://i.pinimg.com/564x/41/36/8a/41368a68c5aeb7ff3b4e1f377f2270e1.jpg"
-    ]
-};
+    const outfits = {
+        "punk": [
+            "imagenes/punk.jpeg",
+        ],
+        "kawaii": [
+            "imagenes/kawaii.jpeg",
+        ],
+        "grunge": [
+            "imagenes/grunge.jpeg"
+        ],
+        "vintage": [
+            "imagenes/vintage.jpeg",
+        ]
+    };
+    
 
 document.getElementById("search-form").addEventListener("submit", function(e) {
     e.preventDefault();
@@ -72,7 +69,7 @@ document.getElementById("search-form").addEventListener("submit", function(e) {
             gallery.appendChild(img);
         });
     } else {
-        gallery.innerHTML = "<p>No se encontraron resultados para ese estilo 😢</p>";
+        gallery.innerHTML = "<p>No se encontraron resultados para ese estilo </p>";
     }
 });
 </script>
