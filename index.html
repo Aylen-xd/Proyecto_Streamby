@@ -40,6 +40,31 @@
     </section>
 </main>
 
+<!--Preguntas fecuentes-->
+<div class="faq-full">
+  <button onclick="toggleSection('faq-content')" class="faq-toggle">
+    ▶ Preguntas Frecuentes
+  </button>
+  <div id="faq-content" class="faq-content">
+    <ul>
+      <li><strong>¿Cómo encuentro mi estilo?</strong> Escribí una palabra clave como "punk", "boho", "elegante" y te mostramos ideas.</li>
+      <li><strong>¿Necesito registrarme?</strong> No, podés explorar libremente. Pero si te registrás, guardamos tus estilos favoritos.</li>
+    </ul>
+  </div>
+</div>
+
+<script>
+  function toggleSection(id) {
+    const section = document.getElementById(id);
+    section.style.display = section.style.display === "none" ? "block" : "none";
+  }
+</script>
+<script>
+  function toggleSection(id) {
+    const section = document.getElementById(id);
+    section.style.display = section.style.display === "none" ? "block" : "none";
+  }
+</script>
 <footer>
     <p>Hecho por Aylen Toledo, Keila Mateo y Geraldine Vargas</p>
 </footer>
